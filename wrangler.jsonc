@@ -1,6 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "cloudflare-astro-blog",
+  "name": "blog01",
   "compatibility_date": "2026-04-10",
-  "pages_build_output_dir": "dist"
+  "main": "dist/_worker.js/index.js",
+  "assets": {
+    "directory": "dist"
+  }
 }
