@@ -1,0 +1,20 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-surface-light/80 dark:bg-surface-dark/80 border-b border-gray-200 dark:border-gray-800">
+  <nav class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+      My Blog
+    </a>
+    <div class="flex items-center gap-4">
+      <a
+        href="/"
+        class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+      >
+        Home
+      </a>
+      <ThemeToggle />
+    </div>
+  </nav>
+</header>
